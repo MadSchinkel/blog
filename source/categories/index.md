@@ -1,6 +1,6 @@
 ---
 title: 分类
 permlink: /categories
-comment: false
+comments: false
 type: categories
 ---

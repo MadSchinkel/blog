@@ -1,6 +1,6 @@
 ---
 title: 标签
 permlink: /tags
-comment: false
+comments: false
 type: tags
 ---

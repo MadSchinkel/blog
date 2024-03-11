@@ -1,7 +1,7 @@
 ---
 title: 关于
 permlink: /about
-comment: true
+comments: true
 type: about
 ---
 

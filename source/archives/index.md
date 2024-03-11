@@ -1,6 +1,6 @@
 ---
 title: 归档
 permlink: /archives
-comment: false
+comments: false
 type: archives
 ---
