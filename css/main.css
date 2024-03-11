@@ -18,10 +18,10 @@
   --btn-default-hover-bg: #222;
   --btn-default-hover-color: #fff;
   --btn-default-hover-border-color: #222;
-  --highlight-background: #fafafa;
-  --highlight-foreground: #383a42;
-  --highlight-gutter-background: #e6e6e7;
-  --highlight-gutter-foreground: #4b4d54;
+  --highlight-background: #fff;
+  --highlight-foreground: #000;
+  --highlight-gutter-background: #e5e5e5;
+  --highlight-gutter-foreground: #191919;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
@@ -45,10 +45,10 @@
     --btn-default-hover-bg: #666;
     --btn-default-hover-color: #ccc;
     --btn-default-hover-border-color: #666;
-    --highlight-background: #282c34;
-    --highlight-foreground: #abb2bf;
-    --highlight-gutter-background: #353941;
-    --highlight-gutter-foreground: #9da4b1;
+    --highlight-background: #1e1e1e;
+    --highlight-foreground: #dcdcdc;
+    --highlight-gutter-background: #313131;
+    --highlight-gutter-foreground: #c9c9c9;
     color-scheme: dark;
   }
   img {
@@ -412,85 +412,58 @@ code.hljs {
 }
 /*
 
-Atom One Light by Daniel Gamage
-Original One Light Syntax theme from https://github.com/atom/one-light-syntax
-
-base:    #fafafa
-mono-1:  #383a42
-mono-2:  #686b77
-mono-3:  #a0a1a7
-hue-1:   #0184bb
-hue-2:   #4078f2
-hue-3:   #a626a4
-hue-4:   #50a14f
-hue-5:   #e45649
-hue-5-2: #c91243
-hue-6:   #986801
-hue-6-2: #c18401
+Visual Studio-like style based on original C# coloring by Jason Diamond <jason@diamond.name>
 
 */
 .hljs {
-  color: #383a42;
-  background: #fafafa
+  background: white;
+  color: black
 }
 .hljs-comment,
-.hljs-quote {
-  color: #a0a1a7;
-  font-style: italic
+.hljs-quote,
+.hljs-variable {
+  color: #008000
 }
-.hljs-doctag,
 .hljs-keyword,
-.hljs-formula {
-  color: #a626a4
-}
-.hljs-section,
-.hljs-name,
 .hljs-selector-tag,
-.hljs-deletion,
-.hljs-subst {
-  color: #e45649
-}
-.hljs-literal {
-  color: #0184bb
+.hljs-built_in,
+.hljs-name,
+.hljs-tag {
+  color: #00f
 }
 .hljs-string,
-.hljs-regexp,
-.hljs-addition,
+.hljs-title,
+.hljs-section,
 .hljs-attribute,
-.hljs-meta .hljs-string {
-  color: #50a14f
-}
-.hljs-attr,
-.hljs-variable,
+.hljs-literal,
+.hljs-template-tag,
 .hljs-template-variable,
 .hljs-type,
-.hljs-selector-class,
+.hljs-addition {
+  color: #a31515
+}
+.hljs-deletion,
 .hljs-selector-attr,
 .hljs-selector-pseudo,
-.hljs-number {
-  color: #986801
+.hljs-meta {
+  color: #2b91af
+}
+.hljs-doctag {
+  color: #808080
+}
+.hljs-attr {
+  color: #f00
 }
 .hljs-symbol,
 .hljs-bullet,
-.hljs-link,
-.hljs-meta,
-.hljs-selector-id,
-.hljs-title {
-  color: #4078f2
-}
-.hljs-built_in,
-.hljs-title.class_,
-.hljs-class .hljs-title {
-  color: #c18401
+.hljs-link {
+  color: #00b0e8
 }
 .hljs-emphasis {
   font-style: italic
 }
 .hljs-strong {
   font-weight: bold
-}
-.hljs-link {
-  text-decoration: underline
 }
 @media (prefers-color-scheme: dark) {
 pre code.hljs {
@@ -502,77 +475,69 @@ code.hljs {
   padding: 3px 5px
 }
 /*
-
-Atom One Dark by Daniel Gamage
-Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
-
-base:    #282c34
-mono-1:  #abb2bf
-mono-2:  #818896
-mono-3:  #5c6370
-hue-1:   #56b6c2
-hue-2:   #61aeee
-hue-3:   #c678dd
-hue-4:   #98c379
-hue-5:   #e06c75
-hue-5-2: #be5046
-hue-6:   #d19a66
-hue-6-2: #e6c07b
-
-*/
+ * Visual Studio 2015 dark style
+ * Author: Nicolas LLOBERA <nllobera@gmail.com>
+ */
 .hljs {
-  color: #abb2bf;
-  background: #282c34
+  background: #1E1E1E;
+  color: #DCDCDC
+}
+.hljs-keyword,
+.hljs-literal,
+.hljs-symbol,
+.hljs-name {
+  color: #569CD6
+}
+.hljs-link {
+  color: #569CD6;
+  text-decoration: underline
+}
+.hljs-built_in,
+.hljs-type {
+  color: #4EC9B0
+}
+.hljs-number,
+.hljs-class {
+  color: #B8D7A3
+}
+.hljs-string,
+.hljs-meta .hljs-string {
+  color: #D69D85
+}
+.hljs-regexp,
+.hljs-template-tag {
+  color: #9A5334
+}
+.hljs-subst,
+.hljs-function,
+.hljs-title,
+.hljs-params,
+.hljs-formula {
+  color: #DCDCDC
 }
 .hljs-comment,
 .hljs-quote {
-  color: #5c6370;
+  color: #57A64A;
   font-style: italic
 }
-.hljs-doctag,
-.hljs-keyword,
-.hljs-formula {
-  color: #c678dd
+.hljs-doctag {
+  color: #608B4E
 }
-.hljs-section,
-.hljs-name,
-.hljs-selector-tag,
-.hljs-deletion,
-.hljs-subst {
-  color: #e06c75
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-tag {
+  color: #9B9B9B
 }
-.hljs-literal {
-  color: #56b6c2
-}
-.hljs-string,
-.hljs-regexp,
-.hljs-addition,
-.hljs-attribute,
-.hljs-meta .hljs-string {
-  color: #98c379
+.hljs-variable,
+.hljs-template-variable {
+  color: #BD63C5
 }
 .hljs-attr,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-type,
-.hljs-selector-class,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-number {
-  color: #d19a66
+.hljs-attribute {
+  color: #9CDCFE
 }
-.hljs-symbol,
-.hljs-bullet,
-.hljs-link,
-.hljs-meta,
-.hljs-selector-id,
-.hljs-title {
-  color: #61aeee
-}
-.hljs-built_in,
-.hljs-title.class_,
-.hljs-class .hljs-title {
-  color: #e6c07b
+.hljs-section {
+  color: gold
 }
 .hljs-emphasis {
   font-style: italic
@@ -580,9 +545,66 @@ hue-6-2: #e6c07b
 .hljs-strong {
   font-weight: bold
 }
-.hljs-link {
-  text-decoration: underline
+/*.hljs-code {
+  font-family:'Monospace';
+}*/
+.hljs-bullet,
+.hljs-selector-tag,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #D7BA7D
 }
+.hljs-addition {
+  background-color: #144212;
+  display: inline-block;
+  width: 100%
+}
+.hljs-deletion {
+  background-color: #600;
+  display: inline-block;
+  width: 100%
+}
+}
+.highlight:hover .copy-btn,
+.code-container:hover .copy-btn {
+  opacity: 1;
+}
+.code-container {
+  position: relative;
+}
+.copy-btn {
+  color: #333;
+  cursor: pointer;
+  line-height: 1.6;
+  opacity: 0;
+  padding: 2px 6px;
+  position: absolute;
+  transition: opacity 0.2s ease-in-out;
+  color: var(--highlight-foreground);
+  font-size: 14px;
+  right: 0;
+  top: 2px;
+}
+figure.highlight {
+  border-radius: 5px;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.4);
+  padding-top: 30px;
+}
+figure.highlight .table-container {
+  border-radius: 0 0 5px 5px;
+}
+figure.highlight::before {
+  background: #fc625d;
+  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+  left: 12px;
+  margin-top: -20px;
+  position: absolute;
+  border-radius: 50%;
+  content: ' ';
+  height: 12px;
+  width: 12px;
 }
 code,
 kbd,
@@ -3050,10 +3072,10 @@ body {
   background-position: 50% 50%;
 }
 :root {
-  --content-bg-color: rgba(63,63,63,0.902);
+  --content-bg-color: rgba(31,31,31,0.969);
 }
 .site-brand-container {
-  background: #282c34;
+  background: #333;
 }
 .footer {
   color: #efefef;

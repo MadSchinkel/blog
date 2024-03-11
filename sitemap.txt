@@ -1,5 +1,5 @@
 http://madschinkel.github.io/blog/posts/hello-world/
-http://madschinkel.github.io/blog/404/index.html
+http://madschinkel.github.io/blog/404.html
 http://madschinkel.github.io/blog/about/index.html
 http://madschinkel.github.io/blog/archives/index.html
 http://madschinkel.github.io/blog/categories/index.html
